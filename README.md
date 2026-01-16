@@ -29,11 +29,11 @@ The tool consists of two main components: trainer.py (to build the model) and me
 To train a new model from a password dataset:
 
 ```Bash
-python3 trainer.py -i PATH_TO_DATASET -o MODEL_NAME.pkl
+python3 trainer.py -i PATH_TO_TRAINING_DATASET -o MODEL_NAME.pkl
 ```
--i: Path to the training dataset (UTF-8). Can be a list of passwords or count password format.
+  -i: Path to the training dataset (UTF-8). Can be a list of passwords or count password format.
 
--o: Output path for the trained model file. e.g., my_model.pkl
+  -o: Output path for the trained model file. e.g., my_model.pkl
 
 2. Evaluating Passwords
 
@@ -56,9 +56,9 @@ Score: 14.520 | Label: 0 (WEAK)
 python3 meter.py -m MODEL_NAME -i INPUT_FILE -o OUTPUT_FILE
 ```
 
--i: Input file containing passwords.
+  -i: Input file containing passwords.
 
--o: Output file (Format: password label_id). Labels: 0 (Weak), 1 (Normal), 2 (Strong).
+  -o: Output file (Format: password label_id). Labels: 0 (Weak), 1 (Normal), 2 (Strong).
 
 ## Tool Structure
 lib_SMML.py: Core library containing the SMMLEstimator class and logic.
@@ -70,6 +70,7 @@ meter.py: Script to evaluate password strength.
 ## Citation
 If you use this tool in your research, please cite our paper:
 
+```bibtex
 @article{thai2024study,  
   title={A study on markov-based password strength meters},  
   author={Thai, Binh Le Thanh and Tanaka, Hidema},  
@@ -79,3 +80,4 @@ If you use this tool in your research, please cite our paper:
   year={2024},  
   publisher={IEEE}  
 }
+```
