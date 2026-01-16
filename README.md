@@ -46,9 +46,10 @@ python3 meter.py -m MODEL_NAME.pkl
 Output example:
 
 >> Enter password: password123
+
    Score: 14.520 | Label: 0 (WEAK)
 
-*File Processing Mode: To evaluate a large list of passwords:
+* File Processing Mode: To evaluate a large list of passwords:
 
 ```Bash
 python3 meter.py -m MODEL_NAME -i INPUT_FILE -o OUTPUT_FILE
