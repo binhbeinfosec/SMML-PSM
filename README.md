@@ -45,7 +45,8 @@ python3 meter.py -m MODEL_NAME.pkl
 
 Output example:
 
-```Enter password: password123
+```
+Enter password: password123  
 Score: 14.520 | Label: 0 (WEAK)
 ```
 
