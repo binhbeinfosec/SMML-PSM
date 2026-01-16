@@ -45,8 +45,9 @@ python3 meter.py -m MODEL_NAME.pkl
 
 Output example:
 
->> Enter password: password123<space><space>
-   Score: 14.520 | Label: 0 (WEAK)
+```Enter password: password123
+Score: 14.520 | Label: 0 (WEAK)
+```
 
 * File Processing Mode: To evaluate a large list of passwords:
 
@@ -68,12 +69,12 @@ meter.py: Script to evaluate password strength.
 ## Citation
 If you use this tool in your research, please cite our paper:
 
-@article{thai2024study,<space><space>
-  title={A study on markov-based password strength meters},<space><space>
-  author={Thai, Binh Le Thanh and Tanaka, Hidema},<space><space>
-  journal={IEEE Access},<space><space>
-  volume={12},<space><space>
-  pages={69066--69075},<space><space>
-  year={2024},<space><space>
-  publisher={IEEE}<space><space>
+@article{thai2024study,  
+  title={A study on markov-based password strength meters},  
+  author={Thai, Binh Le Thanh and Tanaka, Hidema},  
+  journal={IEEE Access},  
+  volume={12},  
+  pages={69066--69075},  
+  year={2024},  
+  publisher={IEEE}  
 }
