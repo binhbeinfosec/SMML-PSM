@@ -21,24 +21,30 @@ pip install numpy
 ```
 
 ## Usage
+
 The tool consists of two main components: trainer.py (to build the model) and meter.py (to evaluate passwords).
 
 1. Training the Model
+
 To train a new model from a password dataset:
 
 ```Bash
 python3 trainer.py -i PATH_TO_DATASET -o MODEL_NAME.pkl
 ```
 -i: Path to the training dataset (UTF-8). Can be a list of passwords or count password format.
+
 -o: Output path for the trained model file. e.g., my_model.pkl
 
 2. Evaluating Passwords
+
 * Interactive Mode: Simply run the meter with the trained model to enter interactive mode:
 
 ```Bash
 python3 meter.py -m MODEL_NAME.pkl
 ```
+
 Output example:
+
 >> Enter password: password123
    Score: 14.520 | Label: 0 (WEAK)
 
@@ -47,12 +53,16 @@ Output example:
 ```Bash
 python3 meter.py -m MODEL_NAME -i INPUT_FILE -o OUTPUT_FILE
 ```
+
 -i: Input file containing passwords.
+
 -o: Output file (Format: password label_id). Labels: 0 (Weak), 1 (Normal), 2 (Strong).
 
 ## Tool Structure
 lib_SMML.py: Core library containing the SMMLEstimator class and logic.
+
 trainer.py: Script to train the model and calculate thresholds.
+
 meter.py: Script to evaluate password strength.
 
 ## Citation
