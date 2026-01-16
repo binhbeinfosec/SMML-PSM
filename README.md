@@ -47,7 +47,7 @@ Output example:
 
 >> Enter password: password123
 
-   Score: 14.520 | Label: 0 (WEAK)
+>> Score: 14.520 | Label: 0 (WEAK)
 
 * File Processing Mode: To evaluate a large list of passwords:
 
@@ -70,11 +70,18 @@ meter.py: Script to evaluate password strength.
 If you use this tool in your research, please cite our paper:
 
 @article{thai2024study,
+
   title={A study on markov-based password strength meters},
+
   author={Thai, Binh Le Thanh and Tanaka, Hidema},
+
   journal={IEEE Access},
+
   volume={12},
+
   pages={69066--69075},
+
   year={2024},
+  
   publisher={IEEE}
 }
