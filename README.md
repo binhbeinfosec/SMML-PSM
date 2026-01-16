@@ -1,4 +1,4 @@
-# SMML-PSM: Simple Markov Model with Length consideration - Password Strength Meter
+# SMML-PSM: Probabilistic Password Strength Meter using Simple Markov Model with Length consideration
 
 **SMML-PSM** is a lightweight, probabilistic password strength estimation tool based on the research: "A Study on Markov-Based Password Strength Meters".
 
